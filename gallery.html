@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/static.css">
+
+    <title>Spreading Hope Foundation!</title>
+  </head>
+  <body>
+    <nav class=' container-fluid navbar navbar-expand-lg navbar-light bg-light p-0'>
+      <div class='container ml-5'>
+        <a class='navbar-brand' href='index.html'>
+          <img src="images/logo1.png" alt="logo" class="logo"/>
+        </a>
+        <button
+          class='navbar-toggler'
+          type='button'
+          data-toggle='collapse'
+          data-target='#navbarText'
+          aria-controls='navbarText'
+          aria-expanded='false'
+          aria-label='Toggle navigation'
+        >
+          <span class='navbar-toggler-icon'></span>
+        </button>
+        <div class='collapse navbar-collapse ml-4' id='navbarText'>
+          <ul class='navbar-nav mr-auto'>
+            <li class='nav-item '>
+              <a class='nav-link ' href='about.html'>
+                About S.H.E.W 
+              </a>
+            </li>
+            <li class='nav-item '>
+              <a class='nav-link' href='member.html'>
+                Get Involved
+              </a>
+            </li>
+            
+            <li class='nav-item '>
+              <a class='nav-link' href='gallery.html'>
+                Projects
+              </a>
+            </li>
+            
+            <li class='nav-item '>
+              <a class='nav-link' href='contact.html'>
+                Contact us
+              </a>
+            </li>
+          </ul>
+          <span class='navbar-text'>
+           
+            <button type="button" class="btn btn-danger mx-5 border-0" data-toggle="modal" data-target="#exampleModal">
+              Donate
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header border-0 ">
+                    <h6 class="modal-title" id="exampleModalLabel">
+                      <img src="images/logo1.png" alt="logo" class="logo"/> SAVE A LIFE: DONATE TODAY</h6>
+                    
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <h5>Thank you for giving to help those in needs!</h1>
+                      <p>children can escape poverty, drug addiction and crime through education and integration!</p>
+                      <p>please fill the form below to indicate interest to donate. A representative would contact you within 24hrs</p>
+                    <form id="contact-form" name="contact-form"  action="donate.php" method="POST">
+                      <div class="form-row">
+                        <div class="form-group col-md-12">
+                          <label ><h6>Your desired amount</h4></label>
+                          <input type="number"  name="amount" class="form-control"  placeholder="Amount you would like to donate">
+                        </div>
+                        <div class="form-group col-md-12">
+                          <label ><h6>Here you can help directly</h6></label>
+                          <select name="direct"  class="form-control">
+                            <option selected>Where it is most needed</option>
+                            <option>Combating Hunger</option>
+                            <option>Transforming lives</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                          <label ><h6>Title<h6></label>
+                          <select name="title" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>Mr</option>
+                            <option>Mrs</option>
+                            <option>Miss</option>
+                            <option>Dr</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-5">
+                          <label ><h6>First Name<h6></label>
+                          <input type="text" name="fname" class="form-control"  placeholder="First Name">
+                        </div>
+                        <div class="form-group col-md-5">
+                          <label><h6>Last Name</h6></label>
+                          <input type="text" name="lname" class="form-control"  placeholder="Last Name">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label ><h6>Address</h6></label>
+                        <input type="text" name="address" class="form-control"  placeholder="1234 Main St">
+                      </div>
+                      <div class="form-group">
+                        <label ><h6>Address 2</h6></label>
+                        <input type="text" class="form-control" name="address1"  placeholder="Apartment, studio, or floor">
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-4">
+                          <label><h6>City</h6></label>
+                          <input type="text" name="city" class="form-control" placeholder="Enter City">
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label ><h6>State</h6></label>
+                          <input type="text" name="state" class="form-control" placeholder="Enter State">
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label ><h6>Country<h6></label>
+                          <input type="text" class="form-control" name="conntry
+                          " placeholder="Enter country">
+                        </div>
+                      </div>
+                      <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                        <input type="checkbox" class="custom-control-input" name="accept" id="customControlInline">
+                        <label class="custom-control-label" for="customControlInline"> I accept the general terms and conditions .</label>
+                      </div>
+                      <div class="modal-footer border-0">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" onclick="document.getElementById('contact-form').submit();"  class="btn btn-primary">Donate</button>
+                      </div>
+                     
+                    </form>
+                    
+                  </div>
+                
+                </div>
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="container mt-5">
+      <div class="row mt-5 justify-content-center">
+        <div class="col-lg-12 col-sm-12 mt-5">
+          <h2 class="text-center"><span class="text-success">PAST</span> EVENTS</h2>
+          <p class="text-center text-muted">S.H.E.W foundation has been able to achieve various activities in Cyprus and Nigeria. </p>
+          </div>
+          
+        <div class="col-lg-10 col-sm-12 mt-4">
+          <h3 class=" text-warning mt-4">Combat Hunger</h3>
+          <p class="text-secondary">It was a success for S.H.E.W foundation for putting smiles on the face of children, widows and old people who needed help.  Thanks to your help, we get the children off the street. </p>
+        </div>
+        <div class="col-lg-10 col-sm-12 mt-4 combathunger shadow-lg">
+        </div>
+        <div class="col-lg-10 col-sm-12 mt-4 text-center">
+          <a href="combathunger.html" class="btn btn-danger shadow-lg border-0 px-5">View more pictures</a>
+        </div>
+        <div class="col-lg-10 col-sm-12 mt-4">
+          <h3 class=" text-success mt-4">Transforming Lives</h3>
+          <p class="text-secondary">We visited Ay Isigi Nursing Home, Northern Cyprus, Famagusta. it was a success and a big win to the S.H.E.W foundation. Thanks to all our volunteers for their assistance in making this event a success </p>
+        </div>
+        <div class="col-lg-10 col-sm-12 mt-4 transforminglive shadow-lg">
+        </div>
+        <div class="col-lg-10 col-sm-12 mt-4 text-center">
+          <a href="transforminglives.html" class="btn btn-success shadow-lg  border-0 px-5">View more pictures</a>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="container-fluid mt-4 border-top">
+      <div class="container ">
+        <div class="row ">
+          <div class="col-lg-3 col-sm-12 mt-4 mb-3">
+            <div class="mt-3">
+              <p class=" footer-text">© 2020 Spreading Hope Foundation
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12 mt-4 mb-3">
+            <div class="mt-3">
+              <a href="index.html" class=" mr-2 footer-text text-success ">Home</a>
+            <a href="#" class=" mr-2 footer-text border-right"></a>
+            <a href="about.html" class=" mr-2 footer-text text-success">About S.H.E.W</a>
+            <a href="#" class=" mr-2 footer-text border-right"></a>
+            <a href="member.html" class=" mr-2 footer-text text-success">Get invoved</a>
+            <a href="#" class=" mr-2 footer-text border-right text-success"></a>
+            <a href="gallery.html" class=" mr-2 footer-text text-success">Projects</a>
+            <a href="#" class=" mr-2 footer-text border-right"></a>
+            <a href="contact.html" class=" mr-2 footer-text text-success">Contact us</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-12 mt-4 mb-3">
+            <a href="https://www.facebook.com/Shewf/" target="_blank"><i class="fab fa-facebook-f text-warning  mr-3 "></i></a>
+            <a href="https://www.instagram.com/shew_foundation/" target="_blank"><i class="fab fa-instagram  text-warning  mr-3"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter text-warning  mr-3 "></i></a>
+            <img src="images/partner.jpg" alt="" style="max-width:90px;"/>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+    </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body
